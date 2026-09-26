@@ -20,7 +20,7 @@ revision = subprocess.check_output(["git", "-C", str(vendor), "rev-parse", "HEAD
 if revision != engine["commit"]:
     raise SystemExit("推理引擎版本不符，停止打包。")
 source = subprocess.check_output(["git", "-C", str(root), "ls-files", "-z"]).decode().split("\0")
-archive = output / "Qwen_AppleWatch_完整工程.zip"
+archive = output / "Qwen-AppleWatch-Complete.zip"
 prefix = "QwenWatch/"
 with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as package:
     for name in filter(None, source):

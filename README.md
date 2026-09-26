@@ -8,7 +8,7 @@
 
 ## 给朋友：下载完整包即可开始安装
 
-到 [Releases 下载页面](https://github.com/2338174932-John/Qwen2.5_AppleWatch/releases/latest)，下载 **Qwen_AppleWatch_完整工程.zip**。
+到 [Releases 下载页面](https://github.com/2338174932-John/Qwen2.5_AppleWatch/releases/latest)，下载 **Qwen-AppleWatch-Complete.zip**。
 
 完整包已包含固定模型（约 491 MB）、手表推理静态库、源码和 Xcode 工程，**不需要另选模型，也不需要自己下载模型或编译推理引擎**。
 
