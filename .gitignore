@@ -1,0 +1,25 @@
+# 本地签名与个人配置
+Config/Local.xcconfig
+*.mobileprovision
+*.p12
+*.p8
+.env*
+# 下载依赖和生成产物
+Vendor/
+Lib/*.a
+Models/*.gguf
+Models/*.part
+.engine-build/
+build/
+DerivedData/
+*.xcarchive
+*.ipa
+*.zip
+# 编辑器及系统文件
+.DS_Store
+xcuserdata/
+*.xcuserstate
+__pycache__/
+# 历史内部记录与已取消的上架草稿
+VALIDATION.md
+Distribution/

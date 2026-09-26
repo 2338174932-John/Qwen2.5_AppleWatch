@@ -1,0 +1,45 @@
+name: QwenWatch
+configFiles:
+  Debug: Config/Local.xcconfig
+  Release: Config/Local.xcconfig
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    WATCHOS_DEPLOYMENT_TARGET: '10.0'
+    CODE_SIGN_STYLE: Automatic
+    ARCHS: arm64
+    LIBRARY_SEARCH_PATHS: $(SRCROOT)/Lib
+    CLANG_CXX_LANGUAGE_STANDARD: c++17
+    SWIFT_OBJC_BRIDGING_HEADER: App/OfflineBridge.h
+    HEADER_SEARCH_PATHS:
+      - $(SRCROOT)/Vendor/llama.cpp/include
+      - $(SRCROOT)/Vendor/llama.cpp/ggml/include
+targets:
+  Qwen:
+    type: application
+    platform: watchOS
+    sources:
+      - App
+      - path: Models/qwen2.5-0.5b-instruct-q4_k_m.gguf
+        buildPhase: resources
+      - path: Licenses
+        buildPhase: resources
+    dependencies:
+      - framework: Lib/libOfflineInference.a
+      - sdk: libc++.tbd
+    settings:
+      base:
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        PRODUCT_BUNDLE_IDENTIFIER: $(QWEN_BUNDLE_IDENTIFIER)
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_WKApplication: YES
+        INFOPLIST_KEY_WKWatchOnly: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Qwen
+        TARGETED_DEVICE_FAMILY: '4'
+        MARKETING_VERSION: '0.1'
+        CURRENT_PROJECT_VERSION: '16'
+schemes:
+  Qwen:
+    build:
+      targets:
+        Qwen: all

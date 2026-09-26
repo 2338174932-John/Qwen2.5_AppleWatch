@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AEF341ED60ED5BDFC70DDEA /* ChatPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA86351C17EFC65057886B3 /* ChatPrompt.swift */; };
+		1D9D34315AD2F467C84404C9 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BA9E211BDA479E908F506 /* ChatView.swift */; };
+		2E4281DCAED80F23532B5688 /* OfflineBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4606C755CB0DF26A9BDE010A /* OfflineBridge.cpp */; };
+		473933F4AAEEF23859E34F32 /* qwen2.5-0.5b-instruct-q4_k_m.gguf in Resources */ = {isa = PBXBuildFile; fileRef = C01F88176D7D5A443B84AC49 /* qwen2.5-0.5b-instruct-q4_k_m.gguf */; };
+		531BC8CDDA7DA2576FF8A0B3 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB0468E71453FD49EC0DAA /* ChatModels.swift */; };
+		5E94D56D524D4C17A17DDF7A /* libOfflineInference.a in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 210E71BAF052905488E4E57D /* libOfflineInference.a */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6533163C02FB40E112806F50 /* libOfflineInference.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 210E71BAF052905488E4E57D /* libOfflineInference.a */; };
+		6D37214A5FAED89DB9E18841 /* Qwen-Apache-2.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 064F678F5A5B69E31A8916EA /* Qwen-Apache-2.0.txt */; };
+		746EAF4A6943B6E2DD405DED /* OfflineStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3CFFB13BF73AACE49CE44D /* OfflineStore.swift */; };
+		7A0EDE50EA94480BD20444E6 /* OfflineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103390068AB607E32CF3068B /* OfflineApp.swift */; };
+		8255170FE8E5F4F59B639C4D /* llama.cpp-MIT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5BC3AC896D24301CA4047D34 /* llama.cpp-MIT.txt */; };
+		912391BF9693542564188B92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238487F90022CB99306B31CC /* Assets.xcassets */; };
+		A64FA5CF9E4DDE68EB8D3E1A /* LocalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85776FEB35F89D3F82031DB0 /* LocalEngine.swift */; };
+		F998468068BA919B8EBD8817 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEF7EB7E6044211940EB0DE /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BECD0148489359284C8BE889 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E94D56D524D4C17A17DDF7A /* libOfflineInference.a in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		064F678F5A5B69E31A8916EA /* Qwen-Apache-2.0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Qwen-Apache-2.0.txt"; sourceTree = "<group>"; };
+		103390068AB607E32CF3068B /* OfflineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineApp.swift; sourceTree = "<group>"; };
+		1831E18A4D27FB5940E13A6B /* OfflineBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OfflineBridge.h; sourceTree = "<group>"; };
+		210E71BAF052905488E4E57D /* libOfflineInference.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOfflineInference.a; path = Lib/libOfflineInference.a; sourceTree = "<group>"; };
+		238487F90022CB99306B31CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B3CFFB13BF73AACE49CE44D /* OfflineStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineStore.swift; sourceTree = "<group>"; };
+		2DA86351C17EFC65057886B3 /* ChatPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPrompt.swift; sourceTree = "<group>"; };
+		3A1BA9E211BDA479E908F506 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		4606C755CB0DF26A9BDE010A /* OfflineBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OfflineBridge.cpp; sourceTree = "<group>"; };
+		48E0D1EE58299C446ACBFB3D /* Local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig; sourceTree = "<group>"; };
+		5BC3AC896D24301CA4047D34 /* llama.cpp-MIT.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "llama.cpp-MIT.txt"; sourceTree = "<group>"; };
+		5DDB0468E71453FD49EC0DAA /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
+		85776FEB35F89D3F82031DB0 /* LocalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalEngine.swift; sourceTree = "<group>"; };
+		AAEF7EB7E6044211940EB0DE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C01F88176D7D5A443B84AC49 /* qwen2.5-0.5b-instruct-q4_k_m.gguf */ = {isa = PBXFileReference; path = "qwen2.5-0.5b-instruct-q4_k_m.gguf"; sourceTree = "<group>"; };
+		CF2464BEE94ED65D4A244727 /* Qwen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DFF43D326D8B9DC2964AD1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6533163C02FB40E112806F50 /* libOfflineInference.a in Frameworks */,
+				F998468068BA919B8EBD8817 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D04E81FA3DC3494232AF5B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2464BEE94ED65D4A244727 /* Qwen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D7D94020BAA9EEDC0FCBAC0 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				5BC3AC896D24301CA4047D34 /* llama.cpp-MIT.txt */,
+				064F678F5A5B69E31A8916EA /* Qwen-Apache-2.0.txt */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		44DD07FE28EDCED9A46942D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C01F88176D7D5A443B84AC49 /* qwen2.5-0.5b-instruct-q4_k_m.gguf */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C5A168E02CC42D43AF14A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF7EB7E6044211940EB0DE /* libc++.tbd */,
+				210E71BAF052905488E4E57D /* libOfflineInference.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA649E651688F89382B39381 = {
+			isa = PBXGroup;
+			children = (
+				E7404954BD0110C45329FC23 /* App */,
+				E55259C8706A98AAD9E902D2 /* Config */,
+				3D7D94020BAA9EEDC0FCBAC0 /* Licenses */,
+				44DD07FE28EDCED9A46942D5 /* Models */,
+				8C5A168E02CC42D43AF14A66 /* Frameworks */,
+				0D04E81FA3DC3494232AF5B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E55259C8706A98AAD9E902D2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				48E0D1EE58299C446ACBFB3D /* Local.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E7404954BD0110C45329FC23 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				238487F90022CB99306B31CC /* Assets.xcassets */,
+				5DDB0468E71453FD49EC0DAA /* ChatModels.swift */,
+				2DA86351C17EFC65057886B3 /* ChatPrompt.swift */,
+				3A1BA9E211BDA479E908F506 /* ChatView.swift */,
+				85776FEB35F89D3F82031DB0 /* LocalEngine.swift */,
+				103390068AB607E32CF3068B /* OfflineApp.swift */,
+				4606C755CB0DF26A9BDE010A /* OfflineBridge.cpp */,
+				1831E18A4D27FB5940E13A6B /* OfflineBridge.h */,
+				2B3CFFB13BF73AACE49CE44D /* OfflineStore.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DD16419088CF167115B20D6 /* Qwen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB512EFAF340A139514274C /* Build configuration list for PBXNativeTarget "Qwen" */;
+			buildPhases = (
+				B4601CAA12FEAB2DE3DE47A3 /* Sources */,
+				B28763B8648CF28A876F2529 /* Resources */,
+				7DFF43D326D8B9DC2964AD1F /* Frameworks */,
+				BECD0148489359284C8BE889 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qwen;
+			packageProductDependencies = (
+			);
+			productName = Qwen;
+			productReference = CF2464BEE94ED65D4A244727 /* Qwen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32939453010E9A18EFEEC09B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7DD16419088CF167115B20D6 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7FE9627157DB90BCA689617D /* Build configuration list for PBXProject "QwenWatch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = BA649E651688F89382B39381;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0D04E81FA3DC3494232AF5B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DD16419088CF167115B20D6 /* Qwen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B28763B8648CF28A876F2529 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912391BF9693542564188B92 /* Assets.xcassets in Resources */,
+				6D37214A5FAED89DB9E18841 /* Qwen-Apache-2.0.txt in Resources */,
+				8255170FE8E5F4F59B639C4D /* llama.cpp-MIT.txt in Resources */,
+				473933F4AAEEF23859E34F32 /* qwen2.5-0.5b-instruct-q4_k_m.gguf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4601CAA12FEAB2DE3DE47A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531BC8CDDA7DA2576FF8A0B3 /* ChatModels.swift in Sources */,
+				1AEF341ED60ED5BDFC70DDEA /* ChatPrompt.swift in Sources */,
+				1D9D34315AD2F467C84404C9 /* ChatView.swift in Sources */,
+				A64FA5CF9E4DDE68EB8D3E1A /* LocalEngine.swift in Sources */,
+				7A0EDE50EA94480BD20444E6 /* OfflineApp.swift in Sources */,
+				2E4281DCAED80F23532B5688 /* OfflineBridge.cpp in Sources */,
+				746EAF4A6943B6E2DD405DED /* OfflineStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		46491F29EAD032FEAA65992C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E0D1EE58299C446ACBFB3D /* Local.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/llama.cpp/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/Lib";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = App/OfflineBridge.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		574AD19F103D4F2FA3CFF6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 16;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Lib\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Qwen;
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QWEN_BUNDLE_IDENTIFIER)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		981485C0D92F9827CBBE9884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E0D1EE58299C446ACBFB3D /* Local.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/llama.cpp/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/Lib";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = App/OfflineBridge.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		9E887EB1B209AC3DD720F8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 16;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Lib\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Qwen;
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QWEN_BUNDLE_IDENTIFIER)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FB512EFAF340A139514274C /* Build configuration list for PBXNativeTarget "Qwen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E887EB1B209AC3DD720F8A7 /* Debug */,
+				574AD19F103D4F2FA3CFF6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7FE9627157DB90BCA689617D /* Build configuration list for PBXProject "QwenWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46491F29EAD032FEAA65992C /* Debug */,
+				981485C0D92F9827CBBE9884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32939453010E9A18EFEEC09B /* Project object */;
+}
